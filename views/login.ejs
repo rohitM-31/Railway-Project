@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .form-wrapper {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-bottom: 20px;
+      margin-left: -1000px;
+    }
+    #box1
+    {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-left:200px;
+      margin-top:-350px;
+
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: dodgerblue;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0073e6;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    p a {
+      color: dodgerblue;
+      text-decoration: none;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Contacts</a>
+    <a href="#">Feedback</a>
+    <a href="#">About</a>
+  </div>
+
+  <div class="container">
+    <div class="form-wrapper">
+      <h3 class="form-title">User Login</h3>
+      <form action="/login" method="post">
+        <div class="form-group">
+          <label for="name">Username:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter username"><br>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" placeholder="Enter password"><br>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p><a href="/signup">Don't have an account? Sign up</a></p>
+    </div>
+   
+    </div>
+      <div class="container">
+        <!-- Admin login form -->
+        <div id="box1">
+          <h3 class="form-title">Admin Login</h3>
+          <form action="/admin/login" method="GET"> <!-- Assuming the route for admin login is /admin/login -->
+            <div class="form-group">
+              <label for="adminName">Admin Username:</label><br>
+              <input type="text" id="adminName" name="adminName" placeholder="Enter admin username"><br>
+            </div>
+            <div class="form-group">
+              <label for="adminPassword">Admin Password:</label><br>
+              <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter admin password"><br>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+  
+</body>
+</html>

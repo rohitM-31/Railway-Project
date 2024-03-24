@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Styling</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Advanced CSS */
+    strong {
+      color: #007bff; /* Blue color */
+    }
+
+    /* Add more advanced CSS as needed */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Documents</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Date</th>
+        <th>Train</th>
+        <th>Class</th>
+      </tr>
+      <% for(i = 0; i< data.length; i++){ %>
+      <tr>
+        <td><strong><%= data[i].name1 %></strong></td>
+        <td><%= data[i].from %></td>
+        <td><%= data[i].to %></td>
+        <td><%= data[i].date %></td>
+        <td><%= data[i].train1 %></td>
+        <td><%= data[i].class1 %></td>
+      </tr>
+      <% } %>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Ticket Booking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        label,
+        input,
+        select {
+            display: block;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            background-color: white;
+            width: 50%;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        p.marquee {
+            font-size: 24px;
+            font-style: italic;
+            text-align: center;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+      #box1
+      {
+        background-color: #0073e6;
+      }
+      .navbar {
+          overflow: hidden;
+          background-color: #333; /* Set the background color */
+      }
+
+      /* Style the links inside the navbar */
+      .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+      }
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Railway Ticket Booking</h1>
+    </header>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Contacts</a>
+    <a href="#">Feedback</a>
+    <a href="#">About</a>
+  </div>
+
+    <p class="marquee">Hey!!! Book your Ticket in IRCTC.........!&nbsp;&nbsp;&nbsp; Make your Journey Peaceful</p>
+    <div class="container">
+        <form action="/booking" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name1" required>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="train">Train:</label>
+            <select id="train" name="train1">
+                <option value="express">Express Train</option>
+                <option value="local">Local Train</option>
+                <option value="bullet">Bullet Train</option>
+            </select>
+            <label for="class">Class:</label>
+            <select id="class" name="class1">
+                <option value="first">First Class</option>
+                <option value="second">Second Class</option>
+                <option value="sleeper">Sleeper Class</option>
+            </select>
+            <button type="submit" id="box1" >Book</button>
+        </form>
+      
+    </div>
+</body>
+</html>

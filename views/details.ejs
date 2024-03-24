@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    li:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 20px auto;
+      display: block;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Documents</h1>
+
+  <form method="get" action="/details">
+  <ul>
+        <li>
+          <strong>Name:</strong> <%= data.name1 %>,<br>
+          <strong>From:</strong> <%= data.from %>,<br>
+          <strong>To:</strong> <%= data.to %>,<br>
+          <strong>Date:</strong> <%= data.date %>,<br>
+          <strong>Train:</strong> <%= data.train1 %>,<br>
+          <strong>Class:</strong> <%= data.class1 %><br>
+        </li>
+  </ul>
+            
+            </form>
+            <a href="http://localhost:3000/login"> <button>bookagain</button></a>
+
+</body>
+</html>
