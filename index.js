@@ -5,7 +5,7 @@ const ejs = require("ejs");
 
 const { ObjectId, MongoClient } = require("mongodb");
 const uri =
-  "mongodb+srv://Nagu1274:Nagu1274@rohitcluster.5ojzrls.mongodb.net/?retryWrites=true&w=majority&appName=Rohitcluster";
+  "";
 const client = new MongoClient(uri);
 
 app.use(bp.urlencoded({ extended: true }));
